@@ -92,7 +92,7 @@ static int alignconv(int align)
 	return align;
 }
 
-int main(int argc, UCHAR **argv)
+int main(int argc, char **argv)
 {
 	FILE *fp;
 	UCHAR *filebuf, *p, *filename, *mapname;

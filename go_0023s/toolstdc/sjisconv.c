@@ -34,7 +34,7 @@ static UCHAR *convmain(UCHAR *src0, UCHAR *src1, UCHAR *dest0, UCHAR *dest1, str
 
 #include "../drv_stdc/others.h"
 
-int main(int argc, UCHAR **argv)
+int main(int argc, char **argv)
 {
 	struct stack_alloc *pwork;
 	UCHAR *p0, *filename, *src1, i = 0;

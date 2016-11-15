@@ -43,7 +43,7 @@ unsigned int GO_strlen(const UCHAR *s);
 
 #include "../drv_stdc/others.h"
 
-int main(int argc, UCHAR **argv)
+int main(int argc, char **argv)
 {
 	struct stack_alloc *pwork;
 	struct str_works works;

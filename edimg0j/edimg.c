@@ -79,7 +79,7 @@ void getattrtime(struct sar_attrtime *s, const UCHAR *path);
 void setattrtime(struct sar_attrtime *s, const UCHAR *path, const int flags);
 void sar_shifttime(struct sar_attrtime *at, int min, void *opt);
 
-int main(int argc, UCHAR **argv)
+int main(int argc, char **argv)
 {
 	UCHAR *script0 = malloc(SIZ_SCRIPT);
 //	fat_flags = malloc(65536);

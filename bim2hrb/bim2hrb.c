@@ -8,7 +8,7 @@ void put32(UCHAR *p, int i);
 
 #define MAXSIZ	4 * 1024 * 1024
 
-int main(int argc, UCHAR **argv)
+int main(int argc, char **argv)
 {
 	UCHAR *fbuf = malloc(MAXSIZ);
 	int heap_siz, mmarea, fsiz, dsize, dofs, stksiz, wrksiz, entry, bsssiz;

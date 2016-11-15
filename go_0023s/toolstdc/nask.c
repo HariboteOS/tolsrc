@@ -41,7 +41,7 @@ struct bss_alloc {
 
 #include "../drv_stdc/others.h"
 
-int main(int argc, UCHAR **argv)
+int main(int argc, char **argv)
 {
 	struct bss_alloc *bss0 = (struct bss_alloc *) malloc(sizeof (struct bss_alloc));
 	GO_stdout.p0 = GO_stdout.p = bss0->_stdout;
