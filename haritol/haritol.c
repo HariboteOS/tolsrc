@@ -33,11 +33,10 @@ int main(int argc, char *argv[])
 				puts("File open error.");
 				return 1;
 			}
-			count = 1;
-			while(count){
+			do{
 				count = fread(cbuf, 1, COPY_BUF_SIZE, srcfp);
 				fwrite(cbuf, 1, count, dstfp);
-			}
+			} while(count);
 			fclose(srcfp);
 		}
 		free(cbuf);
