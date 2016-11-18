@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define COPY_BUF_SIZE	4096 * 1024
+#define COPY_BUF_SIZE	4096 // 4KB
 
 int main(int argc, char *argv[])
 {
