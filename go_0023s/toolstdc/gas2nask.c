@@ -1,10 +1,10 @@
-/* "gas2nask" (stdc”Å)
+/* "gas2nask" (stdcç‰ˆ)
 	Copyright(C) 2004 H.Kawai
 
 	usage : >gas2nask [-a] [-e] input-file output-file
 
-	-a:.text‚Ìbalign2‚ğíœ
-	-e:execcmdŒn‚ÌƒCƒ“ƒ‰ƒCƒ““WŠJ
+	-a:.textã®balign2ã‚’å‰Šé™¤
+	-e:execcmdç³»ã®ã‚¤ãƒ³ãƒ©ã‚¤ãƒ³å±•é–‹
 */
 
 #include <stdlib.h>
@@ -73,8 +73,8 @@ int main(int argc, char **argv)
 	getparam:
 					do {
 						p0++;
-					} while (*p0 != '\0' && *p0 <= ' ');
-					if (*p0 == '\0') {
+					} while (*p0 != 'Â¥0' && *p0 <= ' ');
+					if (*p0 == 'Â¥0') {
 						p0 = *++argv;
 						argc--;
 						if (argc > 1)
@@ -86,7 +86,7 @@ int main(int argc, char **argv)
 					while ('0' <= *p0 && *p0 <= '9')
 						p0++;
 					flags.opt[j] = p0 - param_p[j];
-					p0--; /* Ÿ‚Ìƒ‹[ƒv‚Ì‚½‚ß */
+					p0--; /* æ¬¡ã®ãƒ«ãƒ¼ãƒ—ã®ãŸã‚ */
 					continue;
 				}
 				if (*p0 == 'b') {

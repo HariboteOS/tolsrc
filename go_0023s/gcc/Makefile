@@ -63,7 +63,7 @@ libbackend.lib : $(OBJS)
 
 # -Os‚Å‚ÍƒRƒ“ƒpƒCƒ‹‚Å‚«‚È‚¢‚Ì‚Å‰ñ”ð By Akkie
 toplev.o : toplev.c Makefile ../include/rules.mak
-	$(GCC) -c -O1 -DIN_GCC -DHAVE_CONFIG_H -I../include -o toplev.o toplev.c
+	$(GCC) -m32 -c -O1 -DIN_GCC -DHAVE_CONFIG_H -I../include -o toplev.o toplev.c
 
 gocpp0 : cppmain.o intl.o libcpp.lib hashtable.o version.o \
 		Makefile ../include/rules.mak

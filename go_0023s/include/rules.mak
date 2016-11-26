@@ -1,12 +1,12 @@
 GCC = gcc
 MAKE = make
-LIBRARIAN = ar rcs
+LIBRARIAN = ar rcs --target=a.out-i386-linux
 DEL = rm -f
 
 MAKER = $(MAKE) -r
 MAKEC = $(MAKE) -C
-COMPILE = $(GCC) -c -Os
-LINK = $(GCC) -Wl,-s
+COMPILE = $(GCC) -c -Os -m32
+LINK = $(GCC) -m32 -Wl,-s
 LINK_ADDLIB =
 
 GODRV = ../drv_stdc/drv_stdc.obj
