@@ -73,8 +73,8 @@ int main(int argc, char **argv)
 	getparam:
 					do {
 						p0++;
-					} while (*p0 != '¥0' && *p0 <= ' ');
-					if (*p0 == '¥0') {
+					} while (*p0 != '\0' && *p0 <= ' ');
+					if (*p0 == '\0') {
 						p0 = *++argv;
 						argc--;
 						if (argc > 1)

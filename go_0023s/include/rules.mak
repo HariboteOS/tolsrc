@@ -1,6 +1,6 @@
 GCC = gcc
 MAKE = make
-LIBRARIAN = ar rcs --target=a.out-i386-linux
+LIBRARIAN = ar rcs 
 DEL = rm -f
 
 MAKER = $(MAKE) -r
