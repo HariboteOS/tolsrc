@@ -14,6 +14,7 @@ all:
 	$(MAKEC) t5lzma
 	$(MAKEC) haritol
 	$(MAKEC) multicmd
+	$(MAKEC) fdimg2iso
 
 
 install:
@@ -39,6 +40,9 @@ install:
 	cp t5lzma/t5lzma ok/
 	cp haritol/haritol ok/
 	cp multicmd/multicmd ok/
+	-mkdir ok/makeiso
+	cp fdimg2iso/fdimg2iso.dat ok/makeiso/
+	cp fdimg2iso/fdimg2iso ok/makeiso/
 
 
 clean :
@@ -53,7 +57,8 @@ clean :
 	$(MAKEC) t5lzma clean
 	$(MAKEC) haritol clean
 	$(MAKEC) multicmd clean
-	rm -f ok/*
+	$(MAKEC) fdimg2iso clean
+	rm -rf ok/*
 
 
 
