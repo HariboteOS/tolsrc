@@ -12,6 +12,8 @@ all:
 	$(MAKEC) obj2bi4d
 	$(MAKEC) edimg0j
 	$(MAKEC) t5lzma
+	$(MAKEC) haritol
+	$(MAKEC) multicmd
 
 
 install:
@@ -35,6 +37,8 @@ install:
 	cp edimg0j/edimg ok/
 	cp obj2bi4d/obj2bim ok/
 	cp t5lzma/t5lzma ok/
+	cp haritol/haritol ok/
+	cp multicmd/multicmd ok/
 
 
 clean :
@@ -47,6 +51,8 @@ clean :
 	$(MAKEC) obj2bi4d clean
 	$(MAKEC) edimg0j clean
 	$(MAKEC) t5lzma clean
+	$(MAKEC) haritol clean
+	$(MAKEC) multicmd clean
 	rm -f ok/*
 
 
