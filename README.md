@@ -22,6 +22,7 @@ Source set of tools for developing Haribote OS .
 ### `sys/cdefs.h: No such file or directory`とのエラーが出る
 - Ubuntuの場合は、以下のコマンドを実行して、必要なパッケージをインストールしてください。(Thanks @sk2sat!)
  - `apt-get install libc6-dev-i386`
+ 
 ### go_0023sのコンパイルにMac OSX上で失敗する
 - ~~gocc1などについては、配布されているコンパイル済みのバイナリをご利用ください。~~
  - この問題は修正されました。
