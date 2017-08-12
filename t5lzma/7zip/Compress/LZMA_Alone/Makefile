@@ -5,7 +5,8 @@ RM = rm -f
 STRIP = strip
 CFLAGS = -c
 CC = gcc
-CXX = g++ -O3 -Wall
+CPP = g++
+CXX = $(CPP) -O3 -Wall
 
 OBJS = \
   LzmaAlone.o \
