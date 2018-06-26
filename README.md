@@ -1,7 +1,9 @@
 # tolsrc
+[![CircleCI](https://circleci.com/gh/HariboteOS/tolsrc.svg?style=svg)](https://circleci.com/gh/HariboteOS/tolsrc)
+
 Source set of tools for developing Haribote OS .
 
-## コンパイル方法
+## How to compile
 
 ### 注意点
 
@@ -22,7 +24,7 @@ Source set of tools for developing Haribote OS .
 - ベースとなったソースコードのパッケージは、以下のサイトから取得できます。
  - http://shrimp.marokun.net/osakkie/wiki/tolsetOSX/
 
-## 修正点
+## Changes
 ### haritol
 - 標準ライブラリのみ使用
 - マルチプラットフォームでの開発に対応するため、追加されました。
@@ -33,12 +35,8 @@ Source set of tools for developing Haribote OS .
 - fdのダンプイメージを、ブータブルなisoイメージに変換します。
  - ブータブルCDの作成が簡単に行えます。
 
-## 判明している問題
+## Known issues
 
 ### `sys/cdefs.h: No such file or directory`とのエラーが出る
 - Ubuntuの場合は、以下のコマンドを実行して、必要なパッケージをインストールしてください。(Thanks @sk2sat!)
  - `apt-get install libc6-dev-i386`
- 
-### go_0023sのコンパイルにMac OSX上で失敗する
-- ~~gocc1などについては、配布されているコンパイル済みのバイナリをご利用ください。~~
- - この問題は修正されました。
