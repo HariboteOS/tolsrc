@@ -40,3 +40,16 @@ Source set of tools for developing Haribote OS .
 ### `sys/cdefs.h: No such file or directory`とのエラーが出る
 - Ubuntuの場合は、以下のコマンドを実行して、必要なパッケージをインストールしてください。(Thanks @sk2sat!)
  - `apt-get install libc6-dev-i386`
+
+### Xcode 10 以降でコンパイルできない
+
+macOS でコンパイルする場合 Xcode 10 以降は `i386` アーキテクチャは [サポートされなくなる](https://developer.apple.com/documentation/xcode_release_notes/xcode_10_release_notes#3035631) ためコンパイルができなくなります。
+
+以下の手順で Xcode 9.4 以前をダウンロードし、内部にある `MacOSX.sdk` を利用してコンパイルしてください。
+
+- [https://developer.apple.com/download/more/](https://developer.apple.com/download/more/) から `Xcode_9.4.1.xip` をダウンロードして解凍
+- `gcc` の `--sysroot` にダウンロードした SDK を設定してコンパイルする
+  - (解凍した `Xcode.app` を `/Applications/Xcode_9.4.1.app` に移動させた場合)
+  ```bash
+  make GCC="/usr/local/Cellar/gcc/6.2.0/bin/gcc-6 --sysroot=/Applications/Xcode_9.4.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/"
+  ```
